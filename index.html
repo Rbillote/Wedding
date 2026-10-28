@@ -9,7 +9,7 @@
 
     <script>document.documentElement.classList.add('js');</script>
 
-    <link rel="preload" as="image" href="wedding-garden-bg.jpg" fetchpriority="high" />
+    <link rel="preload" as="image" href="pictures/wedding-garden-bg.jpg" fetchpriority="high" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Great+Vibes&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
@@ -28,6 +28,7 @@
             --dark:#263528;
             --dark-2:#18241b;
             --gold:#CFAA7D;
+            --gold-ink:#80552b;
             --gold-soft:#e7c9a7;
             --sage:#9aaf8d;
             --sage-deep:#52694d;
@@ -62,7 +63,7 @@
         body{
             margin:0;
             font-family:var(--sans);
-            font-weight:300;
+            font-weight:400;
             font-size:16px;
             line-height:1.65;
             color:var(--ink);
@@ -84,7 +85,7 @@
         }
         p{ margin:0 0 1rem; }
         img{ max-width:100%; display:block; }
-        a{ color:var(--gold); }
+        a{ color:var(--gold-ink); }
         button{ font-family:inherit; }
         ::selection{ background:var(--gold-soft); color:var(--dark); }
 
@@ -103,11 +104,11 @@
         ============================================================ */
         .eyebrow{
             font-family:var(--sans);
-            font-size:.7rem;
+            font-size:.78rem;
             font-weight:500;
             letter-spacing:.34em;
             text-transform:uppercase;
-            color:var(--gold);
+            color:var(--gold-ink);
             margin:0 0 .9rem;
         }
         .eyebrow.light{ color:var(--gold-soft); }
@@ -117,7 +118,7 @@
             font-weight:400;
             font-size:clamp(1.7rem,3.4vw,2.6rem);
             line-height:1.2;
-            color:var(--gold);
+            color:var(--gold-ink);
             margin:0 0 .4rem;
         }
 
@@ -135,9 +136,9 @@
             border:1px solid var(--gold);
             border-radius:999px;
             background:transparent;
-            color:var(--gold);
+            color:var(--gold-ink);
             font-family:var(--sans);
-            font-size:.7rem;
+            font-size:.78rem;
             font-weight:500;
             letter-spacing:.26em;
             text-transform:uppercase;
@@ -206,7 +207,7 @@
             padding:2rem;
             background:
                 linear-gradient(135deg, rgba(25,39,28,.74), rgba(48,45,45,.48) 52%, rgba(25,39,28,.76)),
-                url('wedding-garden-bg.jpg') center center / cover no-repeat,
+                url('pictures/wedding-garden-bg.jpg') center center / cover no-repeat,
                 #263528;
             color:#f5efe6;
             overflow:hidden;
@@ -251,7 +252,7 @@
         .intro-inner{ position:relative; text-align:center; }
 
         .intro-names{
-            font-size:.66rem;
+            font-size:.75rem;
             letter-spacing:.55em;
             text-transform:uppercase;
             color:rgba(245,239,230,.55);
@@ -266,7 +267,7 @@
             min-height:1.45em;
             font-family:var(--serif);
             font-size:clamp(1.75rem,5.6vw,3.6rem);
-            font-weight:300;
+            font-weight:400;
             letter-spacing:.03em;
             color:#f7f2ea;
         }
@@ -284,13 +285,13 @@
 
         .enter-btn{
             display:inline-block;
-            margin-top:2.6rem;
+            margin-top:1.5rem;
             padding:.95rem 2.4rem;
             border:1px solid rgba(220,192,136,.55);
             border-radius:999px;
             background:transparent;
             color:var(--gold-soft);
-            font-size:.68rem;
+            font-size:.75rem;
             font-weight:500;
             letter-spacing:.3em;
             text-transform:uppercase;
@@ -318,13 +319,13 @@
             padding:.72rem 1rem; border:1px solid rgba(207,170,125,.65);
             border-radius:999px; background:rgba(255,250,247,.94);
             color:#5d4d57; box-shadow:0 8px 26px rgba(38,31,35,.14);
-            font:500 .68rem/1.2 Jost, sans-serif; letter-spacing:.12em;
+            font:500 .78rem/1.2 Jost, sans-serif; letter-spacing:.08em;
             text-transform:uppercase; cursor:pointer; backdrop-filter:blur(8px);
             -webkit-tap-highlight-color:transparent;
         }
         .music-toggle:focus-visible{ outline:2px solid #CFAA7D; outline-offset:3px; }
         .music-toggle .music-icon{ font-size:1rem; line-height:1; }
-        @media(max-width:600px){ .music-toggle{ padding:.7rem .85rem; font-size:.62rem; } }
+        @media(max-width:600px){ .music-toggle{ padding:.7rem .85rem; font-size:.75rem; } }
         @media(prefers-reduced-motion:reduce){ .music-toggle{ backdrop-filter:none; } }
 
         /* ============================================================
@@ -378,7 +379,7 @@
         }
 
         .hero-kicker{
-            font-size:.7rem;
+            font-size:.78rem;
             letter-spacing:.42em;
             text-transform:uppercase;
             color:rgba(245,239,230,.82);
@@ -406,7 +407,7 @@
 
         .hero-date{
             margin:1.6rem 0 0;
-            font-size:.74rem;
+            font-size:.78rem;
             letter-spacing:.44em;
             text-transform:uppercase;
             color:rgba(245,239,230,.88);
@@ -424,7 +425,7 @@
             align-items:center;
             gap:.85rem;
             color:rgba(245,239,230,.78);
-            font-size:.62rem;
+            font-size:.75rem;
             letter-spacing:.32em;
             text-transform:uppercase;
             padding-left:.32em;
@@ -547,7 +548,7 @@
             margin:1.2rem auto 0;
             max-width:34ch;
         }
-        .quote em{ font-style:italic; color:var(--gold); }
+        .quote em{ font-style:italic; color:var(--gold-ink); }
 
         .rule{
             width:1px;
@@ -606,11 +607,11 @@
         }
         .chapter-no{
             display:inline-block;
-            font-size:.66rem;
+            font-size:.75rem;
             font-weight:500;
             letter-spacing:.36em;
             text-transform:uppercase;
-            color:var(--gold);
+            color:var(--gold-ink);
         }
 
         /* ---------- POLAROID ---------- */
@@ -705,7 +706,7 @@
 
         .polaroid-count{
             flex:0 0 auto;
-            font-size:.64rem;
+            font-size:.75rem;
             font-weight:500;
             letter-spacing:.2em;
             color:#9a8672;
@@ -879,7 +880,7 @@
             margin-bottom:1rem;
         }
         .venue-note{
-            color:#7a6a5a;
+            color:#635449;
             font-size:.92rem;
             line-height:1.8;
         }
@@ -938,6 +939,9 @@
 
         .detail-card{
             position:relative;
+            display:flex;
+            flex-direction:column;
+            align-items:center;
             padding:2.2rem 1.4rem;
             background:#fdfaf3;
             border:1px solid var(--line);
@@ -969,16 +973,30 @@
         .detail-card:hover::after{ opacity:1; }
 
         .detail-card .ico{
-            display:block;
-            font-size:1.75rem;
-            line-height:1;
+            display:grid;
+            place-items:center;
+            width:3rem;
+            height:3rem;
             margin-bottom:.95rem;
+            color:var(--sage-deep);
+        }
+        .detail-card .ico svg{
+            display:block;
+            width:2rem;
+            height:2rem;
+            fill:none;
+            stroke:currentColor;
+            stroke-width:1.7;
+            stroke-linecap:round;
+            stroke-linejoin:round;
         }
         .detail-card h3{
+            width:100%;
             font-size:1.28rem;
             margin-bottom:.4rem;
         }
         .detail-card p{
+            width:100%;
             margin:0;
             font-size:.78rem;
             letter-spacing:.06em;
@@ -1019,7 +1037,7 @@
             transition:color .3s;
             -webkit-tap-highlight-color:transparent;
         }
-        .faq-q:hover{ color:var(--gold); }
+        .faq-q:hover{ color:var(--gold-ink); }
 
         .plus{
             position:relative;
@@ -1079,14 +1097,14 @@
         }
         .footer-date{
             margin:0 0 1.6rem;
-            font-size:.68rem;
+            font-size:.75rem;
             letter-spacing:.36em;
             text-transform:uppercase;
             color:rgba(245,239,230,.52);
             padding-left:.36em;
         }
         .footer small{
-            font-size:.74rem;
+            font-size:.78rem;
             letter-spacing:.12em;
             opacity:.55;
         }
@@ -1119,6 +1137,7 @@
             position:relative;
             width:min(880px,100%);
             max-height:88vh;
+            max-height:88svh;
             overflow-y:auto;
             padding:clamp(1.7rem,4vw,3.2rem);
             background:var(--ivory);
@@ -1165,41 +1184,50 @@
             margin:0 0 1.6rem;
             max-width:62ch;
         }
+        .registry-drive-note{ padding:.75rem 1rem; border-left:3px solid var(--sage-deep); background:#f0f3ed; color:#344332; font-size:.9rem; font-weight:500; }
 
         /* — Family — */
         .people-grid{
             display:grid;
-            grid-template-columns:repeat(3,1fr);
+            grid-template-columns:repeat(2,minmax(0,1fr));
             gap:1.4rem;
             margin-top:1.4rem;
         }
-        .person{ margin:0; text-align:center; }
+        .person{
+            margin:0;
+            padding:.75rem .75rem 1.1rem;
+            border:1px solid rgba(42,36,30,.1);
+            border-radius:16px;
+            background:rgba(255,255,255,.78);
+            box-shadow:0 14px 32px -24px rgba(42,36,30,.5);
+            text-align:center;
+            transition:transform .4s var(--ease),box-shadow .4s var(--ease);
+        }
+        .person:hover{ transform:translateY(-4px); box-shadow:0 20px 40px -24px rgba(42,36,30,.36); }
+        .modal.open .person{ animation:family-card-in .65s var(--ease-out) both; }
+        .modal.open .person:nth-child(2){ animation-delay:.12s; }
+        @keyframes family-card-in{ from{opacity:0;transform:translateY(18px) scale(.985);} to{opacity:1;transform:translateY(0) scale(1);} }
         .person img{
             width:100%;
-            aspect-ratio:1/1;
+            aspect-ratio:3/4;
             object-fit:cover;
-            border-radius:50%;
-            box-shadow:
-                0 18px 34px -20px rgba(42,36,30,.55),
-                0 0 0 4px #fdfaf3,
-                0 0 0 5px rgba(201,169,97,.4);
-            filter:saturate(.98);
+            border-radius:11px;
+            filter:saturate(1.02);
         }
-        .person figcaption{ margin-top:.8rem; }
+        .person figcaption{ margin-top:.85rem; }
         .person strong{
             display:block;
             font-family:var(--serif);
-            font-size:1rem;
-            font-weight:400;
+            font-size:1.12rem;
+            font-weight:600;
             line-height:1.3;
         }
         .person span{
             display:block;
             margin-top:.3rem;
-            font-size:.62rem;
-            letter-spacing:.18em;
-            text-transform:uppercase;
-            color:#8a7a6a;
+            font-size:.82rem;
+            letter-spacing:.05em;
+            color:#65564a;
         }
 
         /* — Dress — */
@@ -1212,51 +1240,63 @@
         .dress-fig{ margin:0; }
         .dress-fig img{
             width:100%;
-            aspect-ratio:4/5;
+            aspect-ratio:2/3;
             object-fit:cover;
             border-radius:8px;
             box-shadow:0 20px 40px -24px rgba(42,36,30,.55);
             filter:saturate(1.02);
+            transition:filter .55s var(--ease), transform .55s var(--ease), opacity .24s var(--ease);
         }
         .dress-fig figcaption{ margin-top:.85rem; }
         .dress-fig strong{
             display:block;
             font-family:var(--serif);
             font-size:1.05rem;
-            font-weight:400;
+            font-weight:600;
             margin-bottom:.3rem;
         }
         .dress-fig span{
             font-size:.85rem;
             line-height:1.75;
-            color:#7a6a5a;
+            color:#635449;
         }
 
         .palette-label{
-            font-size:.66rem;
+            font-size:.75rem;
             letter-spacing:.28em;
             text-transform:uppercase;
-            color:var(--gold);
+            color:var(--gold-ink);
             margin:0 0 .7rem;
         }
         .palette{
             display:flex;
             flex-wrap:wrap;
-            gap:.7rem;
+            align-items:flex-start;
+            gap:.9rem 1rem;
         }
+        .palette-option{ display:flex; flex:0 1 112px; flex-direction:column; align-items:center; gap:.5rem; }
+        .palette-option-name{ min-height:2.2em; color:#493c37; font-family:var(--script); font-size:1.18rem; line-height:1; text-align:center; }
         .swatch{
             width:44px;
             height:44px;
             border-radius:50%;
             background:var(--c);
-            box-shadow:
-                inset 0 0 0 1px rgba(0,0,0,.06),
-                0 0 0 3px #fdfaf3,
-                0 0 0 4px rgba(201,169,97,.35),
-                0 8px 16px -10px rgba(0,0,0,.55);
-            transition:transform .35s var(--ease);
+            color:#423a36;
+            box-shadow:0 0 0 3px #fdfaf3,0 0 0 4px rgba(201,169,97,.35),0 8px 16px -10px rgba(0,0,0,.55);
+            transition:transform .35s var(--ease), filter .35s var(--ease);
+            border:0;
+            cursor:pointer;
         }
         .swatch:hover{ transform:translateY(-4px) scale(1.06); }
+        .swatch[aria-pressed="true"]{ box-shadow:inset 0 0 0 2px #fff,0 0 0 3px var(--sage-deep),0 8px 16px -10px rgba(0,0,0,.55); transform:scale(1.08); }
+        .swatch:focus-visible{ outline:3px solid var(--sage-deep); outline-offset:5px; }
+        .btn:active,.detail-card:active,.swatch:active{ transform:scale(.98); }
+        .palette-help{ color:#594c42; font-size:.9rem; font-weight:500; margin:.65rem 0 0; }
+        :focus-visible{ outline:3px solid var(--sage-deep); outline-offset:3px; }
+        @media (prefers-reduced-motion:reduce){
+            html{ scroll-behavior:auto; }
+            *,*::before,*::after{ animation-duration:.001ms !important; animation-iteration-count:1 !important; transition-duration:.001ms !important; scroll-behavior:auto !important; }
+        }
 
         /* — Timeline — */
         .timeline{ list-style:none; margin:0; padding:0; }
@@ -1270,11 +1310,11 @@
         }
         .timeline li:last-child{ border-bottom:0; }
         .t-time{
-            font-size:.66rem;
+            font-size:.75rem;
             font-weight:500;
             letter-spacing:.16em;
             text-transform:uppercase;
-            color:var(--gold);
+            color:var(--gold-ink);
         }
         .t-text{ font-size:.95rem; color:#5a4a3d; }
 
@@ -1286,11 +1326,11 @@
             margin-bottom:1.15rem;
         }
         .field label{
-            font-size:.64rem;
+            font-size:.75rem;
             font-weight:500;
             letter-spacing:.22em;
             text-transform:uppercase;
-            color:#8a7a6a;
+            color:#65564a;
         }
         .field input,
         .field select,
@@ -1302,7 +1342,7 @@
             background:#fdfaf3;
             font-family:var(--sans);
             font-size:.95rem;
-            font-weight:300;
+            font-weight:400;
             color:var(--ink);
             transition:border-color .3s, box-shadow .3s;
         }
@@ -1327,11 +1367,11 @@
         .menu-group:last-child{ margin-bottom:0; }
         .menu-group h4{
             font-family:var(--sans);
-            font-size:.64rem;
+            font-size:.75rem;
             font-weight:500;
             letter-spacing:.3em;
             text-transform:uppercase;
-            color:var(--gold);
+            color:var(--gold-ink);
             margin-bottom:.7rem;
         }
         .menu-group ul{ list-style:none; margin:0; padding:0; }
@@ -1351,7 +1391,7 @@
             border-radius:50%;
             background:var(--sage);
         }
-        .menu-group em{ color:#8a7a6a; font-style:italic; font-size:.88em; }
+        .menu-group em{ color:#65564a; font-style:italic; font-size:.88em; }
 
         /* — Playlist — */
         .playlist{ list-style:none; margin:0; padding:0; }
@@ -1365,11 +1405,11 @@
         }
         .playlist li:last-child{ border-bottom:0; }
         .pl-moment{
-            font-size:.62rem;
+            font-size:.75rem;
             font-weight:500;
             letter-spacing:.2em;
             text-transform:uppercase;
-            color:var(--gold);
+            color:var(--gold-ink);
         }
         .pl-song{
             font-family:var(--serif);
@@ -1430,7 +1470,7 @@
         .lb-figure img.swapping{ opacity:0; }
         .lb-figure figcaption{ padding:0 8px 16px; }
         .lb-figure .lb-cap{ color:var(--mahogany); }
-        .lb-figure .lb-desc{ color:#82727b; }
+        .lb-figure .lb-desc{ color:#65575f; }
 
         .lb-cap{
             margin:1.1rem 0 .35rem;
@@ -1444,7 +1484,7 @@
             max-width:54ch;
             font-size:.85rem;
             line-height:1.7;
-            color:#82727b;
+            color:#65575f;
             text-align:center;
         }
 
@@ -1497,13 +1537,15 @@
             .venue.rev .venue-inner{ grid-template-columns:1fr; }
             .venue.rev .venue-media{ order:0; }
             .detail-grid{ grid-template-columns:repeat(2,1fr); }
-            .people-grid{ grid-template-columns:repeat(2,1fr); }
+            .people-grid{ grid-template-columns:repeat(2,minmax(0,1fr)); }
         }
         @media (max-width:720px){
             .dress-grid{ grid-template-columns:1fr; }
         }
         @media (max-width:640px){
             .modal-veil{ -webkit-backdrop-filter:none; backdrop-filter:none; }
+            .people-grid{ grid-template-columns:1fr; gap:1rem; }
+            .person{ width:min(100%,420px); margin-inline:auto; }
             .lightbox{ padding:3.5rem .65rem 1rem; }
             .lb-figure{ width:100%; max-height:82svh; padding:10px 10px 0; outline-offset:-4px; }
             .lb-figure img{ height:min(58svh, 520px); }
@@ -1516,12 +1558,13 @@
             .lb-close{ top:.7rem; right:.7rem; width:40px; height:40px; }
             .timeline li{ grid-template-columns:82px 1fr; gap:.8rem; }
             .playlist li{ grid-template-columns:1fr; gap:.2rem; }
-            .modal-box{ max-height:92vh; }
+            .modal-box{ max-height:92vh; max-height:92svh; }
             .hero-title{ gap:.02em .16em; }
         }
         @media (max-width:480px){
             .detail-grid{ grid-template-columns:1fr; }
-            .people-grid{ grid-template-columns:1fr 1fr; gap:1rem; }
+            .people-grid{ grid-template-columns:1fr; gap:1rem; }
+            .palette-option{ flex-basis:92px; }
             .palette .swatch{ width:38px; height:38px; }
         }
         @media (prefers-reduced-motion:reduce){
@@ -1568,7 +1611,7 @@
          PAGE 2 — HERO (Tropical Garden)
     ========================================================== -->
     <header class="hero" id="hero"
-            style="--hero:url('wedding-garden-bg.jpg')">
+            style="--hero:url('pictures/wedding-garden-bg.jpg')">
         <div class="hero-bg" aria-hidden="true"></div>
         <div class="hero-veil" aria-hidden="true"></div>
 
@@ -1595,15 +1638,15 @@
         <div class="stage-sticky">
 
             <div class="stage-hero" id="stageHero">
-                <img src="wedding-garden-bg.jpg" alt="A flower-covered garden arch in soft pink and green" loading="eager" decoding="async" />
+                <img src="pictures/wedding-garden-bg.jpg" alt="A flower-covered garden arch in soft pink and green" loading="eager" decoding="async" />
             </div>
 
-            <figure class="fly"><img src="https://images.unsplash.com/photo-1545241047-6083a3684587?auto=format&fit=crop&w=600&q=80" alt="" /></figure>
-            <figure class="fly"><img src="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?auto=format&fit=crop&w=600&q=80" alt="" /></figure>
-            <figure class="fly"><img src="https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=600&q=80" alt="" /></figure>
-            <figure class="fly"><img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=600&q=80" alt="" /></figure>
-            <figure class="fly"><img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=600&q=80" alt="" /></figure>
-            <figure class="fly"><img src="wedding-garden-bg.jpg" alt="" /></figure>
+            <figure class="fly"><img src="pictures/moments-01.jpeg" alt="" /></figure>
+            <figure class="fly"><img src="pictures/moments-02.jpeg" alt="" /></figure>
+            <figure class="fly"><img src="pictures/moments-03.jpg" alt="" /></figure>
+            <figure class="fly"><img src="pictures/moments-04.jpg" alt="" /></figure>
+            <figure class="fly"><img src="pictures/moments-05.jpeg" alt="" /></figure>
+            <figure class="fly"><img src="pictures/moments-06.jpg" alt="" /></figure>
 
         </div>
     </section>
@@ -1643,9 +1686,9 @@
                         <span class="chapter-no">Chapter One</span>
                         <h3>How We Met</h3>
                         <p>
-                            September 2019. A crowded coffee shop, one spare table, and two people
-                            who both refused to leave. RC offered to share the table; Nicole offered
-                            to share her book. Three hours later the barista had to ask us to go home.
+                           It all started with a conversation on a dating app.
+                           We started talking, getting to know each other, and eventually, what began as a simple chat turned into something more. 
+                           Little did we know that one conversation would lead us to where we are today.
                         </p>
                     </div>
 
@@ -1653,20 +1696,20 @@
                         <div class="polaroid-frame">
                             <div class="polaroid-photos">
                                 <img class="polaroid-photo"
-                                     src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=700&q=80"
-                                     data-full="https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=1400&q=85"
+                                     src="pictures/story-01.jpeg"
+                                     data-full="pictures/story-01.jpeg"
                                      data-title="The Coffee Shop"
                                      data-desc="Where it all began — a table for two, September 2019."
                                      alt="The coffee shop where we met" />
                                 <img class="polaroid-photo"
-                                     src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&fit=crop&w=700&q=80"
-                                     data-full="https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&fit=crop&w=1400&q=85"
+                                     src="pictures/story-02.jpeg"
+                                     data-full="pictures/story-02.jpeg"
                                      data-title="Our First Photo"
                                      data-desc="One week later, and neither of us could stop smiling."
                                      alt="Our first photo together" />
                                 <img class="polaroid-photo"
-                                     src="https://images.unsplash.com/photo-1502680390469-be75c86b636f?auto=format&fit=crop&w=700&q=80"
-                                     data-full="https://images.unsplash.com/photo-1502680390469-be75c86b636f?auto=format&fit=crop&w=1400&q=85"
+                                     src="pictures/story-03.jpeg"
+                                     data-full="pictures/story-03.jpeg"
                                      data-title="That First Autumn"
                                      data-desc="Long walks, cheap wine and conversations that never ended."
                                      alt="Our first autumn together" />
@@ -1689,9 +1732,9 @@
                         <span class="chapter-no">Chapter Two</span>
                         <h3>Falling In Love</h3>
                         <p>
-                            Then came the in-between: burnt pancakes on Sunday mornings, road trips
-                            with the wrong playlists, and the quiet realisation that home was never
-                            a place — it was a person.
+                            As we got to know each other better, we started building a connection that eventually turned into love. 
+                            We shared stories, made memories, and slowly became a bigger part of each other’s lives. 
+                            Before we knew it, we were no longer just two people getting to know each other, but two people choosing to be together.
                         </p>
                     </div>
 
@@ -1699,20 +1742,20 @@
                         <div class="polaroid-frame">
                             <div class="polaroid-photos">
                                 <img class="polaroid-photo"
-                                     src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=700&q=80"
-                                     data-full="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=1400&q=85"
+                                     src="pictures/story-04.jpeg"
+                                     data-full="pictures/story-04.jpeg"
                                      data-title="Sunday Mornings"
                                      data-desc="Pancakes, coffee, and absolutely no reason to rush."
                                      alt="Sunday mornings together" />
                                 <img class="polaroid-photo"
-                                     src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=700&q=80"
-                                     data-full="https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=1400&q=85"
+                                     src="pictures/story-05.jpeg"
+                                     data-full="pictures/story-05.jpeg"
                                      data-title="Our First Trip"
                                      data-desc="Lost in a garden whose name we still can't pronounce."
                                      alt="Our first trip together" />
                                 <img class="polaroid-photo"
-                                     src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=700&q=80"
-                                     data-full="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1400&q=85"
+                                     src="pictures/story-06.jpeg"
+                                     data-full="pictures/story-06.jpeg"
                                      data-title="The Little Things"
                                      data-desc="Rainy afternoons and dancing in the kitchen."
                                      alt="Dancing in the kitchen" />
@@ -1735,9 +1778,9 @@
                         <span class="chapter-no">Chapter Three</span>
                         <h3>The Next Step</h3>
                         <p>
-                            On a quiet beach at sunset, RC got down on one knee. There were tears,
-                            there was laughter, and there was a "yes" before the question was even
-                            finished. Now we're writing the next chapter — and we want you in it.
+                            From that first conversation on a dating app to finding our way to each other, here we are, ready to take the next step. 
+                            We’re excited to start this new chapter, build a life together, and continue choosing each other every day. 
+                            This time, it’s not just about falling in love, but about forever.
                         </p>
                     </div>
 
@@ -1745,20 +1788,20 @@
                         <div class="polaroid-frame">
                             <div class="polaroid-photos">
                                 <img class="polaroid-photo"
-                                     src="https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?auto=format&fit=crop&w=700&q=80"
-                                     data-full="https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?auto=format&fit=crop&w=1400&q=85"
+                                     src="pictures/story-07.jpeg"
+                                     data-full="pictures/story-07.jpeg"
                                      data-title="The Proposal"
                                      data-desc="Sunset, the sea, and one very important question."
                                      alt="The proposal" />
                                 <img class="polaroid-photo"
-                                     src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=700&q=80"
-                                     data-full="https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=1400&q=85"
+                                     src="pictures/story-08.jpeg"
+                                     data-full="pictures/story-08.jpeg"
                                      data-title="She Said Yes"
                                      data-desc="The moment the ring went on."
                                      alt="She said yes" />
                                 <img class="polaroid-photo"
-                                     src="https://images.unsplash.com/photo-1591604466107-ec97de577aff?auto=format&fit=crop&w=700&q=80"
-                                     data-full="https://images.unsplash.com/photo-1591604466107-ec97de577aff?auto=format&fit=crop&w=1400&q=85"
+                                     src="pictures/story-09.jpeg"
+                                     data-full="pictures/story-09.jpeg"
                                      data-title="Our Forever Begins"
                                      data-desc="Counting down the days to June 30, 2027."
                                      alt="Our forever begins" />
@@ -1889,32 +1932,32 @@
 
         <div class="detail-grid">
             <button type="button" class="detail-card reveal" style="--d:0s" data-modal="modal-family">
-                <span class="ico" aria-hidden="true">💍</span>
+                <span class="ico" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M8.4 19.5 16 9l7.6 10.5a4.7 4.7 0 0 1-7.6 5.6 4.7 4.7 0 0 1-7.6-5.6Z"/><path d="m8.4 19.5 7.6 1.3 7.6-1.3M13 13.2l3 7.6 3-7.6"/></svg></span>
                 <h3>Family</h3>
                 <p>The people who made us</p>
             </button>
             <button type="button" class="detail-card reveal" style="--d:.08s" data-modal="modal-dress">
-                <span class="ico" aria-hidden="true">👗</span>
+                <span class="ico" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="m12 5 4 3 4-3 2 7 5 15H5l5-15 2-7Z"/><path d="m12 5 4 8 4-8M10 16h12"/></svg></span>
                 <h3>Dress Code</h3>
                 <p>Filipiniana attire</p>
             </button>
             <button type="button" class="detail-card reveal" style="--d:.16s" data-modal="modal-time">
-                <span class="ico" aria-hidden="true">⏱️</span>
+                <span class="ico" aria-hidden="true"><svg viewBox="0 0 32 32"><circle cx="16" cy="18" r="10"/><path d="M13 3h6M16 8V5m0 13 5-4m-5 4v-6"/></svg></span>
                 <h3>Time Duration</h3>
                 <p>How the day unfolds</p>
             </button>
             <button type="button" class="detail-card reveal" style="--d:.24s" data-modal="modal-registry">
-                <span class="ico" aria-hidden="true">✍️</span>
+                <span class="ico" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M6 25.5 8 19 21.8 5.2a2.5 2.5 0 0 1 3.5 0l1.5 1.5a2.5 2.5 0 0 1 0 3.5L13 24l-7 1.5Z"/><path d="m19.5 7.5 5 5M6 29h20"/></svg></span>
                 <h3>Registry</h3>
                 <p>Register your attendance</p>
             </button>
             <button type="button" class="detail-card reveal" style="--d:.32s" data-modal="modal-menu">
-                <span class="ico" aria-hidden="true">🍽️</span>
+                <span class="ico" aria-hidden="true"><svg viewBox="0 0 32 32"><circle cx="17" cy="17" r="10"/><circle cx="17" cy="17" r="6.5"/><path d="M4 5v9m-2-9v5a2 2 0 0 0 4 0V5m-2 9v14m24-23v23m0-23c-3 3-4 7-4 11h4"/></svg></span>
                 <h3>Dinner Menu</h3>
                 <p>A Filipino feast</p>
             </button>
             <button type="button" class="detail-card reveal" style="--d:.40s" data-modal="modal-music">
-                <span class="ico" aria-hidden="true">🎵</span>
+                <span class="ico" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M19 24V6l10-2v18"/><path d="M19 10l10-2"/><ellipse cx="14" cy="25" rx="5" ry="3.5"/><ellipse cx="24" cy="23" rx="5" ry="3.5"/></svg></span>
                 <h3>Music</h3>
                 <p>The soundtrack of the day</p>
             </button>
@@ -1988,28 +2031,12 @@
 
             <div class="people-grid">
                 <figure class="person">
-                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=500&q=80" alt="RC" />
-                    <figcaption><strong>Ricardo "RC" Dela Cruz</strong><span>The Groom</span></figcaption>
+                    <img src="pictures/RCFamily.jpg" alt="RC's family gathered together" loading="lazy" decoding="async" />
+                    <figcaption><strong>RC’s Family</strong><span>The groom’s family</span></figcaption>
                 </figure>
                 <figure class="person">
-                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=500&q=80" alt="Nicole" />
-                    <figcaption><strong>Nicole Reyes</strong><span>The Bride</span></figcaption>
-                </figure>
-                <figure class="person">
-                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=500&q=80" alt="Father of the groom" />
-                    <figcaption><strong>Eduardo &amp; Maria Dela Cruz</strong><span>Father &amp; Mother of the Groom</span></figcaption>
-                </figure>
-                <figure class="person">
-                    <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=500&q=80" alt="Mother of the bride" />
-                    <figcaption><strong>Carmela Reyes</strong><span>Mother of the Bride</span></figcaption>
-                </figure>
-                <figure class="person">
-                    <img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=500&q=80" alt="Sister of the groom" />
-                    <figcaption><strong>Sofia Dela Cruz</strong><span>Sister of the Groom · Maid of Honour</span></figcaption>
-                </figure>
-                <figure class="person">
-                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=500&q=80" alt="Brother of the bride" />
-                    <figcaption><strong>Marco Reyes</strong><span>Brother of the Bride · Best Man</span></figcaption>
+                    <img src="pictures/NicoleFamily.jpeg" alt="Nicole's family gathered together" loading="lazy" decoding="async" />
+                    <figcaption><strong>Nicole’s Family</strong><span>The bride’s family</span></figcaption>
                 </figure>
             </div>
         </div>
@@ -2024,34 +2051,53 @@
             <button type="button" class="modal-close" data-close aria-label="Close">✕</button>
             <p class="eyebrow">Dress Code</p>
             <h2 class="modal-title" id="dress-title">Filipiniana Garden Formal</h2>
-            <p class="modal-lead">Elegant Filipino attire, in soft garden tones. Please avoid white, ivory and cream.</p>
+            <p class="modal-lead">Filipino formalwear in the soft garden palette below.</p>
 
             <div class="dress-grid">
                 <figure class="dress-fig">
-                    <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=700&q=80" alt="Filipiniana gown inspiration" />
+                    <img id="dressHer" src="pictures/dress-her-gold.jpg" alt="Filipina model wearing a gold Filipiniana terno gown with butterfly sleeves" />
                     <figcaption>
                         <strong>For Her</strong>
-                        <span>Modern terno or baro't saya in soft garden tones — sage, anahaw gold, terracotta, dusty rose. Butterfly sleeves encouraged, flats or block heels for the lawn.</span>
+                        <span>Filipiniana terno or baro't saya in soft garden tones. Butterfly sleeves are encouraged; choose flats or block heels for the lawn.</span>
                     </figcaption>
                 </figure>
                 <figure class="dress-fig">
-                    <img src="https://images.unsplash.com/photo-1594938298603-c8148c4dae35?auto=format&fit=crop&w=700&q=80" alt="Barong Tagalog inspiration" />
+                    <img id="dressHim" src="pictures/dress-him-barong.jpg" alt="Filipino man wearing a long-sleeved ivory Barong Tagalog" />
                     <figcaption>
                         <strong>For Him</strong>
-                        <span>Barong Tagalog in piña or jusi — cream, champagne, or a light sage. A light suit in warm earth tones is also welcome. No tie needed; the embroidery speaks for itself.</span>
+                        <span>Traditional ivory, long-sleeved Barong Tagalog in piña or jusi, with dark formal trousers.</span>
                     </figcaption>
                 </figure>
             </div>
 
             <p class="palette-label">Suggested palette</p>
             <div class="palette">
-                <span class="swatch" style="--c:#f7f3e8" title="Sampaguita"></span>
-                <span class="swatch" style="--c:#8b9d77" title="Sage Leaf"></span>
-                <span class="swatch" style="--c:#c9a961" title="Anahaw Gold"></span>
-                <span class="swatch" style="--c:#b8704f" title="Terracotta"></span>
-                <span class="swatch" style="--c:#e8cfc1" title="Dusty Rose"></span>
-                <span class="swatch" style="--c:#5a3a2e" title="Mahogany"></span>
+                <div class="palette-option">
+                    <button type="button" class="swatch" style="--c:#CFAA7D" data-color="gold" aria-label="Principal sponsors, gold #CFAA7D" aria-pressed="true" title="Principal sponsors · #CFAA7D"></button>
+                    <span class="palette-option-name">Principal sponsors</span>
+                </div>
+                <div class="palette-option">
+                    <button type="button" class="swatch" style="--c:#D9BEE6" data-color="lavender" aria-label="Secondary sponsors, lavender #D9BEE6" aria-pressed="false" title="Secondary sponsors · #D9BEE6"></button>
+                    <span class="palette-option-name">Secondary sponsors</span>
+                </div>
+                <div class="palette-option">
+                    <button type="button" class="swatch" style="--c:#C1DEFF" data-color="blue" aria-label="Mothers of the couple, powder blue #C1DEFF" aria-pressed="false" title="Mothers of the couple · #C1DEFF"></button>
+                    <span class="palette-option-name">Mothers of the couple</span>
+                </div>
+                <div class="palette-option">
+                    <button type="button" class="swatch" style="--c:#FFD6E0" data-color="pink" aria-label="Maid of honor, blush pink #FFD6E0" aria-pressed="false" title="Maid of honor · #FFD6E0"></button>
+                    <span class="palette-option-name">Maid of honor</span>
+                </div>
+                <div class="palette-option">
+                    <button type="button" class="swatch" style="--c:#FFF2AE" data-color="yellow" aria-label="Bridesmaids, pale yellow #FFF2AE" aria-pressed="false" title="Bridesmaids · #FFF2AE"></button>
+                    <span class="palette-option-name">Bridesmaids</span>
+                </div>
+                <div class="palette-option">
+                    <button type="button" class="swatch" style="--c:#FFE1CC" data-color="peach" aria-label="Bridesmaids, peach #FFE1CC" aria-pressed="false" title="Bridesmaids · #FFE1CC"></button>
+                    <span class="palette-option-name">Bridesmaids</span>
+                </div>
             </div>
+            <p class="palette-help" id="paletteHelp" aria-live="polite">Selected for her: Principal sponsors · #CFAA7D</p>
         </div>
     </div>
 
@@ -2089,6 +2135,7 @@
             <p class="eyebrow">RSVP</p>
             <h2 class="modal-title" id="registry-title">Register Your Attendance</h2>
             <p class="modal-lead">Kindly respond by May 15, 2027 so we can save your seat at the long table.</p>
+            <p class="registry-drive-note">Your RSVP will be saved to the couple’s Google Drive after the Drive connection is set up.</p>
 
             <div class="registry-form" id="registryForm">
                 <div class="field">
@@ -2209,6 +2256,8 @@
         </figure>
     </div>
 
+    <iframe id="rsvpDriveFrame" name="rsvpDriveFrame" title="RSVP submission" src="about:blank" aria-hidden="true" style="position:absolute;width:1px;height:1px;left:-9999px;border:0"></iframe>
+
     <script>
         (function () {
             'use strict';
@@ -2237,6 +2286,26 @@
             var weddingMusic = $('#weddingMusic');
             var musicToggle = $('#musicToggle');
             var musicToggleLabel = $('#musicToggleLabel');
+            var paletteFiles = { gold:'gold', lavender:'lavender', blue:'blue', pink:'pink', yellow:'yellow', peach:'peach' };
+            $$('.swatch[data-color]').forEach(function (swatch) {
+                swatch.addEventListener('click', function () {
+                    var color = swatch.getAttribute('data-color');
+                    var her = $('#dressHer');
+                    if (her && paletteFiles[color]) {
+                        var nextPhoto = 'pictures/dress-her-' + paletteFiles[color] + '.jpg';
+                        if (her.getAttribute('src') === nextPhoto) {
+                            her.style.opacity = '1';
+                        } else {
+                            her.style.opacity = '0.25';
+                            her.onload = function () { her.style.opacity = '1'; };
+                            her.src = nextPhoto;
+                        }
+                    }
+                    $$('.swatch[data-color]').forEach(function (item) { item.setAttribute('aria-pressed', item === swatch ? 'true' : 'false'); });
+                    var help = $('#paletteHelp');
+                    if (help) help.textContent = 'Selected for her: ' + swatch.getAttribute('title');
+                });
+            });
             var typingAudioContext = null;
             var typingSoundReady = false;
 
@@ -2315,36 +2384,8 @@
                 requestAnimationFrame(updateAll);
             }
             enterBtn.addEventListener('click', enterSite);
-            var typingSoundUnlocked = false;
-            function unlockTypingSoundAndReplay(e) {
-                /* Unlock only from the intro area, never from the Enter button.
-                   This keeps the typewriter sound tied to the letters appearing,
-                   not to clicking 'Click to enter'. */
-                if (e && e.target && (e.target === enterBtn || enterBtn.contains(e.target))) return;
-                prepareTypingSound();
-                if (typingAudioContext && typingAudioContext.state === 'suspended') {
-                    typingAudioContext.resume().catch(function () { });
-                }
-                if (!typingSoundUnlocked) {
-                    typingSoundUnlocked = true;
-                    /* Mobile browsers require a user gesture before audio can play.
-                       If the automatic typing already finished silently, replay the
-                       phrase after a tap on the intro background/text so the clicks
-                       are heard alongside the animation. */
-                    if (typingDone && !hasEntered) {
-                        typingDone = false;
-                        typed = 0;
-                        twEl.textContent = '';
-                        enterBtn.classList.remove('show');
-                        clearTimeout(typeTimer);
-                        typeTimer = setTimeout(typeStep, 120);
-                    }
-                }
-            }
-            intro.addEventListener('pointerdown', unlockTypingSoundAndReplay, { passive: true });
-            intro.addEventListener('keydown', unlockTypingSoundAndReplay);
-            /* Create the sound engine early where permitted. Browsers that suspend
-               it will resume on an intro interaction, independently of Enter. */
+            /* Try to start typing audio automatically. Browser autoplay policy
+               may keep Web Audio suspended until the visitor interacts. */
             prepareTypingSound();
             setTimeout(typeStep, 650);
 
@@ -2419,9 +2460,9 @@
                 var vw = window.innerWidth;
                 var vh = window.innerHeight;
                 var isMobile = vw < 760;
-                var rx = Math.min(vw * 0.345, 400);
-                var ry = Math.min(vh * 0.305, 295);
-                var fw = isMobile ? Math.min(vw * 0.205, 100) : Math.min(vw * 0.132, 168);
+                var rx = Math.min(vw * 0.34, 850);
+                var ry = Math.min(vh * 0.28, 360);
+                var fw = isMobile ? Math.min(vw * 0.25, 130) : Math.min(vw * 0.18, 320);
                 var fh = fw * 4 / 3;
                 heroEndScale = isMobile ? 0.46 : 0.34;
                 flySlots = flyEls.map(function (el, i) {
@@ -2799,6 +2840,8 @@
             /* ============ REGISTRY ============ */
             var regSubmit = $('#regSubmit');
             var regNote = $('#regNote');
+            /* Paste the deployed Google Apps Script web app URL here after setup. */
+            var googleDriveRsvpUrl = 'https://script.google.com/macros/s/AKfycbxESibLDp2N7pGMcp93X9eylzDPxDww0LCYoTKqMTDNDHnwd2_Dmvn5hdZFz8M_BEP0Tg/exec';
             if (regSubmit) {
                 regSubmit.addEventListener('click', function () {
                     var nameEl = $('#reg-name');
@@ -2822,14 +2865,53 @@
                         if (emailEl) emailEl.focus();
                         return;
                     }
-                    regNote.textContent =
-                        'Thank you, ' + name + '! Your RSVP for ' + guests +
-                        ' guest' + (guests === '1' ? '' : 's') + ' has been recorded.' +
-                        (note ? ' We\'ve noted your message too.' : '');
-                    regNote.className = 'reg-note ok';
-                    regSubmit.disabled = true;
-                    regSubmit.textContent = 'RSVP Sent ✓';
-                    // Hook this up to your server-side handler to persist the RSVP.
+                    if (!googleDriveRsvpUrl) {
+                        regNote.textContent = 'Google Drive is not connected yet. Follow the setup steps for GoogleDriveRSVP.gs, then add the web app URL to the page.';
+                        regNote.className = 'reg-note err';
+                        return;
+                    }
+
+                    var frame = document.getElementById('rsvpDriveFrame');
+                    if (!frame) {
+                        frame = document.createElement('iframe');
+                        frame.id = 'rsvpDriveFrame';
+                        frame.name = 'rsvpDriveFrame';
+                        frame.title = 'RSVP submission';
+                        frame.setAttribute('aria-hidden', 'true');
+                        frame.style.cssText = 'position:absolute;width:1px;height:1px;left:-9999px;border:0';
+                        document.body.appendChild(frame);
+                    }
+                    var form = document.createElement('form');
+                    form.method = 'POST';
+                    form.action = googleDriveRsvpUrl;
+                    form.target = frame.name;
+                    form.style.display = 'none';
+                    [['name', name], ['email', email], ['guests', guests], ['message', note]].forEach(function (pair) {
+                        var input = document.createElement('input');
+                        input.type = 'hidden'; input.name = pair[0]; input.value = pair[1];
+                        form.appendChild(input);
+                    });
+                    var completed = false;
+                    var timeout = setTimeout(function () {
+                        if (completed) return;
+                        completed = true;
+                        regNote.textContent = 'We could not confirm the RSVP submission. Please try again or contact the couple.';
+                        regNote.className = 'reg-note err';
+                        regSubmit.disabled = false;
+                    }, 15000);
+                    frame.addEventListener('load', function onDriveResponse() {
+                        if (completed) return;
+                        completed = true;
+                        clearTimeout(timeout);
+                        frame.removeEventListener('load', onDriveResponse);
+                        regNote.textContent = 'Thank you, ' + name + '! Your RSVP for ' + guests + ' guest' + (guests === '1' ? '' : 's') + ' was sent to Google Drive.';
+                        regNote.className = 'reg-note ok';
+                        regSubmit.disabled = true;
+                        regSubmit.textContent = 'RSVP Sent ✓';
+                    });
+                    document.body.appendChild(form);
+                    form.submit();
+                    form.remove();
                 });
             }
 
