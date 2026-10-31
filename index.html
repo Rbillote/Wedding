@@ -748,22 +748,22 @@
         @media (max-width:640px){
             .intro-glow{ animation:none; opacity:.78; }
             .intro-lanterns{ animation:none; opacity:.82; }
-            .chapter-scroll{ height:auto; padding:1rem 0; }
-            .chapter-sticky{ position:relative; top:auto; height:auto; min-height:100svh; padding:1.5rem .9rem; overflow:visible; }
-            .chapter-layout{ gap:.85rem; }
-            .chapter-head h3{ font-size:1.3rem; margin:.4rem 0 .6rem; }
+            .chapter-scroll{ height:200svh; padding:0; }
+            .chapter-sticky{ position:sticky; top:0; height:100svh; min-height:100svh; padding:.8rem .9rem; overflow:visible; }
+            .chapter-layout{ gap:.55rem; }
+            .chapter-head h3{ font-size:1.2rem; margin:.3rem 0 .45rem; }
             .chapter-head p{
-                font-size:.85rem; line-height:1.65;
+                font-size:.8rem; line-height:1.5;
                 display:block;
                 overflow:visible;
             }
-            .polaroid{ width:min(300px, 74vw); }
+            .polaroid{ width:min(250px, 68vw, 36svh); }
             .polaroid-frame{ padding:10px 10px 0; }
             .polaroid-meta{ padding:12px 4px 16px; min-height:48px; }
             .polaroid-label{ font-size:1rem; }
         }
         @media (max-width:400px){
-            .polaroid{ width:min(270px, 78vw); }
+            .polaroid{ width:min(250px, 68vw, 36svh); }
         }
 
         /* ============================================================
@@ -1899,9 +1899,9 @@
             <p class="eyebrow">The Ceremony</p>
             <h2>Immaculate Heart of Mary Parish</h2>
             <p class="venue-addr">Diocese of Antipolo · Antipolo City, Rizal</p>
-            <p class="venue-when">Wednesday, June 30, 2027 · 4:00 PM</p>
+            <p class="venue-when">Wednesday, June 30, 2027 · 3:00 PM</p>
             <p class="venue-note">
-                Doors open at 3:30 PM — please arrive early so we can start on time.
+                Doors open at 2:30 PM — please be seated before the ceremony begins at 3:00 PM.
                 Sampaguita garlands for every guest at the door.
             </p>
 
@@ -1943,8 +1943,7 @@
             <p class="venue-addr">Antipolo City, Rizal, Philippines</p>
             <p class="venue-when">Wednesday, June 30, 2027 · 6:00 PM</p>
             <p class="venue-note">
-                Cocktails on the garden lawn at 5:00 PM. Dinner and dancing under
-                capiz lanterns and the wide Antipolo sky.
+                Cocktails, dinner, and dancing indoors beneath glowing capiz lanterns.
             </p>
 
             <div class="venue-actions">
@@ -1985,7 +1984,7 @@
             <button type="button" class="detail-card reveal" style="--d:.08s" data-modal="modal-dress">
                 <span class="ico" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="m12 5 4 3 4-3 2 7 5 15H5l5-15 2-7Z"/><path d="m12 5 4 8 4-8M10 16h12"/></svg></span>
                 <h3>Dress Code</h3>
-                <p>Filipiniana attire</p>
+                <p>Palette and outfit guide</p>
             </button>
             <button type="button" class="detail-card reveal" style="--d:.16s" data-modal="modal-time">
                 <span class="ico" aria-hidden="true"><svg viewBox="0 0 32 32"><circle cx="16" cy="18" r="10"/><path d="M13 3h6M16 8V5m0 13 5-4m-5 4v-6"/></svg></span>
@@ -2022,15 +2021,15 @@
         <div class="faq-list reveal">
             <div class="faq-item">
                 <button type="button" class="faq-q" aria-expanded="false">Is there a dress code?<span class="plus" aria-hidden="true"></span></button>
-                <div class="faq-a"><p>Filipiniana garden formal, please. Think terno, baro't saya, or a modern Filipiniana gown for her; Barong Tagalog or a light suit in piña or jusi for him. Soft garden tones — sage, sampaguita cream, anahaw gold, terracotta and dusty rose — are lovely. Kindly avoid white and ivory (that's the bride's job).</p></div>
+                <div class="faq-a"><p>For women, Filipiniana is requested for principal sponsors only, in anahaw gold (#CFAA7D). Everyone else should wear a simple modern formal dress in her palette color: secondary sponsors in lavender (#D9BEE6), mothers in powder blue (#C1DEFF), the maid of honor in blush pink (#FFD6E0), and bridesmaids in pale yellow (#FFF2AE) or peach (#FFE1CC). Please avoid white and ivory. Men may wear a Barong Tagalog or a light formal suit.</p></div>
             </div>
             <div class="faq-item">
-                <button type="button" class="faq-q" aria-expanded="false">Is the wedding outdoors?<span class="plus" aria-hidden="true"></span></button>
-                <div class="faq-a"><p>The ceremony is indoors at the chapel. The reception is outdoors on the garden lawn, under a covered marquee strung with capiz lanterns — so we're comfortable either way. In case of heavy rain, everything moves into the estate's ballroom.</p></div>
+                <button type="button" class="faq-q" aria-expanded="false">Are the ceremony and reception indoors?<span class="plus" aria-hidden="true"></span></button>
+                <div class="faq-a"><p>Yes. Both are indoors. The ceremony will be at Immaculate Heart of Mary Parish in Antipolo City, Rizal, and the reception will be at Jardin de Miramar Events Venue.</p></div>
             </div>
             <div class="faq-item">
                 <button type="button" class="faq-q" aria-expanded="false">What will the weather be like?<span class="plus" aria-hidden="true"></span></button>
-                <div class="faq-a"><p>Late June in Tagaytay is warm and breezy — usually 24–30°C by day and cooler in the evening. There's a chance of an afternoon shower, so a light wrap or shawl is a good idea (and beautiful in photos).</p></div>
+                <div class="faq-a"><p>Late June in Antipolo can be warm, with a chance of rain. Both the ceremony and reception are indoors, so dress comfortably for the occasion.</p></div>
             </div>
             <div class="faq-item">
                 <button type="button" class="faq-q" aria-expanded="false">Can I bring a plus one or my kids?<span class="plus" aria-hidden="true"></span></button>
@@ -2038,11 +2037,11 @@
             </div>
             <div class="faq-item">
                 <button type="button" class="faq-q" aria-expanded="false">What time should I arrive at the ceremony?<span class="plus" aria-hidden="true"></span></button>
-                <div class="faq-a"><p>Please arrive by <strong>2:30 PM</strong>. The ceremony starts at 3:00 PM sharp and the doors close once the bridal march begins. If you're running late, an usher will seat you between readings.</p></div>
+                <div class="faq-a"><p>Please arrive by <strong>2:30 PM</strong>. The ceremony at Immaculate Heart of Mary Parish begins at 3:00 PM.</p></div>
             </div>
             <div class="faq-item">
-                <button type="button" class="faq-q" aria-expanded="false">I have a food allergy — can I make a special request?<span class="plus" aria-hidden="true"></span></button>
-                <div class="faq-a"><p>Absolutely. Note your allergies and dietary needs in the Registry form on this site, or message us directly, and our caterer will prepare a dedicated plate for you. Vegetarian and vegan options are available too — just say the word.</p></div>
+                <button type="button" class="faq-q" aria-expanded="false">What if I have a food allergy?<span class="plus" aria-hidden="true"></span></button>
+                <div class="faq-a"><p>The dinner menu is fixed, and we cannot provide substitutions or special meals. If you know that a menu item contains something you are allergic to, please do not eat that item.</p></div>
             </div>
             <div class="faq-item">
                 <button type="button" class="faq-q" aria-expanded="false">Is there parking at the venue?<span class="plus" aria-hidden="true"></span></button>
@@ -2050,7 +2049,7 @@
             </div>
             <div class="faq-item">
                 <button type="button" class="faq-q" aria-expanded="false">Help! I have another question!<span class="plus" aria-hidden="true"></span></button>
-                <div class="faq-a"><p>No problem at all — reach out to us at <a href="mailto:rsvp@rcandnicole.com">rsvp@rcandnicole.com</a> or message either of us on the phone. We'd rather answer a hundred questions than have you wondering.</p></div>
+                <div class="faq-a"><p>No problem at all — reach out to us at <a href="mailto:ricchristianbillote1997@gmail.com">ricchristianbillote1997@gmail.com</a> or message either of us on the phone. We'd rather answer a hundred questions than have you wondering.</p></div>
             </div>
         </div>
     </section>
@@ -2097,7 +2096,7 @@
             <button type="button" class="modal-close" data-close aria-label="Close">✕</button>
             <p class="eyebrow">Dress Code</p>
             <h2 class="modal-title" id="dress-title">Filipiniana Garden Formal</h2>
-            <p class="modal-lead">Filipino formalwear in the soft garden palette below.</p>
+            <p class="modal-lead">Women who are principal sponsors wear Filipiniana. Other women wear a simple modern formal dress in their assigned palette color.</p>
 
             <div class="dress-grid">
                 <figure class="dress-fig" id="dressHerFigure">
@@ -2105,7 +2104,7 @@
                     <img id="dressHerSimple" src="pictures/dress-her-evening-lavender.jpg" alt="A woman wearing a modern floor-length evening gown" hidden />
                     <figcaption>
                         <strong>For Her</strong>
-                        <span id="dressHerDesc">Principal sponsors: Filipiniana terno or baro't saya in anahaw gold. Choose flats or block heels for the lawn.</span>
+                        <span id="dressHerDesc">Principal sponsors only: Filipiniana terno or baro't saya in anahaw gold (#CFAA7D).</span>
                     </figcaption>
                 </figure>
                 <figure class="dress-fig">
@@ -2161,7 +2160,7 @@
             <ul class="timeline">
                 <li><span class="t-time">2:30 PM</span><span class="t-text">Guests arrive at the chapel · sampaguita garlands</span></li>
                 <li><span class="t-time">3:00 PM</span><span class="t-text">The ceremony begins</span></li>
-                <li><span class="t-time">4:00 PM</span><span class="t-text">Cocktail hour &amp; family photos under the trees</span></li>
+                <li><span class="t-time">4:00 PM</span><span class="t-text">Family photos after the ceremony</span></li>
                 <li><span class="t-time">5:00 PM</span><span class="t-text">Shuttle to the reception</span></li>
                 <li><span class="t-time">6:00 PM</span><span class="t-text">Dinner is served — a Filipino feast</span></li>
                 <li><span class="t-time">7:00 PM</span><span class="t-text">Speeches &amp; toasts</span></li>
@@ -2204,7 +2203,7 @@
                     </select>
                 </div>
                 <div class="field">
-                    <label for="reg-message">Allergies, dietary needs, or a note for the couple</label>
+                    <label for="reg-message">Food allergy information (menu is fixed) or a note for the couple</label>
                     <textarea id="reg-message" name="message" rows="3" placeholder="Optional — but we'd love to hear from you"></textarea>
                 </div>
                 <button type="button" class="btn btn-solid" id="regSubmit">Send RSVP</button>
@@ -2361,7 +2360,7 @@
                         }
                         var herDesc = $('#dressHerDesc');
                         if (herDesc) herDesc.textContent = isPrincipal
-                            ? 'Principal sponsors: Filipiniana terno or baro\'t saya in anahaw gold. Choose flats or block heels for the lawn.'
+                            ? 'Principal sponsors only: Filipiniana terno or baro\'t saya in anahaw gold (#CFAA7D).'
                             : swatch.getAttribute('title').split(' · ')[0] + ': a simple modern floor-length gown in the selected garden color.';
                         if (isPrincipal) {
                             var nextPhoto = 'pictures/dress-her-gold.jpg';
@@ -2673,8 +2672,17 @@
                 var vh = window.innerHeight;
                 if (rect.bottom < -300 || rect.top > vh + 300) return;
                 var total = section.offsetHeight - vh;
-                if (total <= 0) return;
-                var p = clamp(-rect.top / total, 0, 1);
+                var p;
+                if (total > 0) {
+                    p = clamp(-rect.top / total, 0, 1);
+                } else if (window.matchMedia && window.matchMedia('(max-width: 640px)').matches) {
+                    /* Short, naturally-sized phone chapters have no sticky scroll range.
+                       Progress the slideshow as the whole chapter passes through the viewport. */
+                    var travel = vh + section.offsetHeight;
+                    p = clamp((vh - rect.top) / travel, 0, 1);
+                } else {
+                    return;
+                }
                 var opacities = computeOpacities(p, data.total);
                 if (reduceMotion) {
                     var fixedIndex = Math.min(data.total - 1, Math.floor(p * data.total));
